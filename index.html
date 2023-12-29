@@ -64,7 +64,7 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-fluid position-relative nav-bar p-0" id="home">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
@@ -76,10 +76,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="package.html" class="nav-item nav-link">Tour Packages</a>
+                        <a href="#packages" class="nav-item nav-link">Tour Packages</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
@@ -90,7 +90,7 @@
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -206,7 +206,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="about">
         <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-6" style="min-height: 500px;">
@@ -395,7 +395,7 @@
 
 
     <!-- Packages Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="packages">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
@@ -404,119 +404,158 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-1.jpg" alt="">
+                        <img class="img-fluid" src="img/safari-1.jpg" alt="Safari Image 1">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>   NORTHEN</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>4 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>Group</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="#">Tarangire and Ngorongoro Crater</a>
+                            <p>4 DAYS, 3 NIGHTS SAFARI IN TANZANIA<br>
+                            Tarangire and Ngorongoro Crater<br>
+                            
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <button class="btn btn-primary btn-sm rounded-pill" type="submit">Read More</button>
+
+                                    <h5 class="m-0">$1,200</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-2.jpg" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                
+<!-- Tour 1: Our Safari -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-item bg-white mb-2">
+                            <img class="img-fluid" src="img/ngoro milia.jpg" alt="Safari Image 1">
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tanzania</small>
+                                    <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>4 days, 3 nights</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>Group</small>
+                                </div>
+                                <a class="h5 text-decoration-none" href="#">Our Safari</a>
+                                <p>4 DAYS, 3 NIGHTS SAFARI IN TANZANIA<br>
+                                Tarangire and Ngorongoro Crater<br>
+                                Safari Overview: Explore Africa’s greatest national parks on these 4 days Tanzania Safari...</p>
+                                <div class="border-top mt-4 pt-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                        <button class="btn btn-primary btn-sm rounded-pill" type="submit">Read More</button>
+                                        <h5 class="m-0">$1,200</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-3.jpg" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+
+                    <!-- Tour 2: Tanzania Adventure -->
+
+
+                    <!-- Tour 3: Serengeti and Ngorongoro -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-item bg-white mb-2">
+                            <img class="img-fluid" src="img/ngoro simba.jpg" alt="Safari Image 3">
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tanzania</small>
+                                    <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>5 days</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>Group</small>
+                                </div>
+                                <a class="h5 text-decoration-none" href="#">Serengeti and Ngorongoro Crater</a>
+                                <p>5 DAYS, 4 NIGHTS SAFARI IN TANZANIA<br>
+                                Serengeti and Ngorongoro Crater<br>
+                                Safari Overview: Explore Africa’s greatest national parks on this 5 days Tanzania Safari...</p>
+                                <div class="border-top mt-4 pt-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(280)</small></h6>
+                                        <button class="btn btn-primary btn-sm rounded-pill" type="submit">Read More</button>
+                                        <h5 class="m-0">$1,800</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-4.jpg" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+
+                    <!-- Tour 4: Zanzibar Beach Package -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-item bg-white mb-2">
+                            <img class="img-fluid" src="img/zenji2.jpg" alt="Zanzibar Image 1">
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Zanzibar</small>
+                                    <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days, 2 nights</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>Couple</small>
+                                </div>
+                                <a class="h5 text-decoration-none" href="#">Zanzibar Beach Package</a>
+                                <p>3 DAYS, 2 NIGHTS PACKAGE<br>
+                                Day 1: ARRIVAL<br>
+                                Arrive Zanzibar airport/ferry and transfer to the hotel for check-in and overnight...</p>
+                                <div class="border-top mt-4 pt-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6 <small>(200)</small></h6>
+                                        <button class="btn btn-primary btn-sm rounded-pill" type="submit">Read More</button>
+                                        <h5 class="m-0">$900</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-5.jpg" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="package-item bg-white mb-2">
+                            <img class="img-fluid" src="img/ngorowatalii.jpg" alt="Safari Image 2">
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tanzania</small>
+                                    <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>5 days, 4 nights</small>
+                                    <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>Group</small>
+                                </div>
+                                <a class="h5 text-decoration-none" href="#">Tanzania Adventure</a>
+                                <p>5 DAYS, 4 NIGHTS SAFARI IN TANZANIA<br>
+                                Tarangire, Lake Manyara, and Ngorongoro Crater<br>
+                                Safari Overview: Expect to be impressed by the natural beauty of Africa’s most famous park...</p>
+                                <div class="border-top mt-4 pt-4">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(300)</small></h6>
+                                        <button class="btn btn-primary btn-sm rounded-pill" type="submit">Read More</button>
+                                        <h5 class="m-0">$1,500</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-6.jpg" alt="">
-                        <div class="p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
-                            </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Tour 5: Kilimanjaro Trek -->
+<div class="col-lg-4 col-md-6 mb-4">
+    <div class="package-item bg-white mb-2">
+        <img class="img-fluid" src="img/mlimakili.jpg" alt="Kilimanjaro Image 1">
+        <div class="p-4">
+            <div class="d-flex justify-content-between mb-3">
+                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tanzania</small>
+                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>7 days, 6 nights</small>
+                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>Individual</small>
+            </div>
+            <a class="h5 text-decoration-none" href="#">Kilimanjaro Trek</a>
+            <p>7 DAYS, 6 NIGHTS TREK IN TANZANIA<br>
+            Conquer the Roof of Africa with our Kilimanjaro trekking adventure...</p>
+            <div class="border-top mt-4 pt-4">
+                <div class="d-flex justify-content-between">
+                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(350)</small></h6>
+                    <button class="btn btn-primary btn-sm rounded-pill" type="submit">Read More</button>
+                    <h5 class="m-0">$2,500</h5>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+
+               
+            </div>
+            <button class="btn btn-primary btn-sm rounded-pill" type="submit">MORE PACKAGES</button>
+
         </div>
     </div>
     <!-- Packages End -->
